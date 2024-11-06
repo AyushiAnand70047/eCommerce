@@ -1,19 +1,19 @@
 <?php
 // Include necessary files for DB connection and functions
 include('../includes/db.php');
-include('../controller/ProductController.php'); // Assuming functions like getProductById() are here
+include_once('../controller/ProductController.php');
 
-// Get the request URI
+// Get the full request URI
 $request_uri = $_SERVER['REQUEST_URI'];
 
-// Route handling
-if (preg_match(`/^\/E-commerce PHP\/views\/detail\/(\d+)\/?$/`, $request_uri, $matches)) {
-    $id = (int) $matches[1];  // Ensure $id is treated as an integer
-    $product = getProductById($conn, $id);  // Fetch product details from the database
+// Extract the product ID from the request URI (last part of the URL)
+$uri_parts = explode('/', rtrim($request_uri, '/'));
+$id = end($uri_parts);  // The last part is assumed to be the product ID
 
+if (is_numeric($id)) {  // Check if the extracted ID is numeric
+    $product = getProductById($conn, $id);
     if ($product) {
-        // Include the product detail view file
-        include('views/product_detail.php');
+        header("Location: /E-commercePHP/views/product_detail.php?id=$id");
     } else {
         echo "Product not found!";
     }

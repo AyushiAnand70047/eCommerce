@@ -20,7 +20,7 @@ include('../controller/ProductController.php');
     <div class="carousel-inner">
       <?php foreach ($products as $item): ?>
         <div class="item <?= $item['id'] == 1 ? 'active' : '' ?>">
-          <a href="detail/<?= $item['id'] ?>">
+          <a href="product_detail/<?= $item['id'] ?>">
             <img class="slider-img" src="<?= htmlspecialchars($item['gallery']) ?>">
             <div class="carousel-caption slider-text">
               <h3><?= htmlspecialchars($item['name']) ?></h3>
@@ -47,7 +47,7 @@ include('../controller/ProductController.php');
     <?php foreach ($products as $item): ?>
       <div class="col-md-2 col-sm-6 card shadow-sm custom-card" style="width: 22rem;">
         <div class="trending-item">
-          <a href="detail/<?= $item['id'] ?>" style="margin: 20px">
+          <a href="../routes/web.php/<?= $item['id'] ?>" style="margin: 20px">
             <img class="trending-image card-img-top" src="<?= htmlspecialchars($item['gallery']) ?>">
             <div class="card-body text-center">
               <h3 class="card-title text-dark text-center"><?= htmlspecialchars($item['name']) ?></h3>

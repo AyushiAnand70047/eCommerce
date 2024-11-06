@@ -25,10 +25,6 @@ function getProductById($conn, $id) {
     }
 }
 
-$id = $_GET['id'];
-
-$product = getProductById($conn, $id);
-
 $products = getProducts($conn);
 
 ?>

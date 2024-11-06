@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /E-commercePHP/
+
+# Rewrite the URL 'views/detail/{id}' to 'views/product_detail.php?id={id}'
+RewriteRule ^views/detail/([0-9]+)$ /E-commercePHP/views/product_detail.php?id=$1 [L,QSA]
