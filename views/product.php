@@ -6,6 +6,7 @@ include('../controller/ProductController.php');
 
 ?>
 
+
 <div class="custom-product">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -58,6 +59,13 @@ include('../controller/ProductController.php');
     <?php endforeach; ?>
   </div>
 </div>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 <style>
   img.slider-img {
