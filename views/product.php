@@ -22,10 +22,10 @@ include('../controller/ProductController.php');
       <?php foreach ($products as $item): ?>
         <div class="item <?= $item['id'] == 1 ? 'active' : '' ?>">
           <a href="product_detail/<?= $item['id'] ?>">
-            <img class="slider-img" src="<?= htmlspecialchars($item['gallery']) ?>">
+            <img class="slider-img" src="<?= $item['gallery'] ?>">
             <div class="carousel-caption slider-text">
-              <h3><?= htmlspecialchars($item['name']) ?></h3>
-              <p><?= htmlspecialchars($item['description']) ?></p>
+              <h3><?= $item['name'] ?></h3>
+              <p><?= $item['description'] ?></p>
             </div>
           </a>
         </div>
@@ -49,9 +49,9 @@ include('../controller/ProductController.php');
       <div class="col-md-2 col-sm-6 card shadow-sm custom-card" style="width: 22rem;">
         <div class="trending-item">
           <a href="../routes/web.php/<?= $item['id'] ?>" style="margin: 20px">
-            <img class="trending-image card-img-top" src="<?= htmlspecialchars($item['gallery']) ?>">
+            <img class="trending-image card-img-top" src="<?= $item['gallery'] ?>">
             <div class="card-body text-center">
-              <h3 class="card-title text-dark text-center"><?= htmlspecialchars($item['name']) ?></h3>
+              <h3 class="card-title text-dark text-center"><?= $item['name'] ?></h3>
             </div>
           </a>
         </div>
@@ -60,12 +60,13 @@ include('../controller/ProductController.php');
   </div>
 </div>
 
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- Bootstrap JS -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<!-- Bootstrap cdn link and jquery cdn link -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <style>
   img.slider-img {

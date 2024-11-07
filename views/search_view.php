@@ -13,10 +13,10 @@ include('header.php');
                 <?php foreach ($products as $item): ?>
                     <div class="searched-item">
                         <a href="../routes/web.php/<?= $item['id'] ?>">
-                            <img class="trending-image" src="<?php echo htmlspecialchars($item['gallery']); ?>" alt="<?php echo htmlspecialchars($item['name']); ?>">
+                            <img class="trending-image" src="<?= $item['gallery'] ?>" alt="<?=$item['name'] ?>">
                             <div class="">
-                                <h2><?php echo htmlspecialchars($item['name']); ?></h2>
-                                <h5><?php echo htmlspecialchars($item['description']); ?></h5>
+                                <h2><?=$item['name'] ?></h2>
+                                <h5><?=$item['description'] ?></h5>
                             </div>
                         </a>
                     </div>
