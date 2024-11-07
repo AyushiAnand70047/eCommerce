@@ -15,9 +15,9 @@ $sql = "INSERT INTO products (name, price, description, category, gallery) VALUE
     ('Boat Headset', 2499, 'boAt Rockerz 450 Pro with Upto 70 Hours Playback Bluetooth (Aqua Blue, On the Ear)', 'Headset', 'https://rukminim2.flixcart.com/image/416/416/kmccosw0/headphone/9/h/j/rockerz-450-pro-boat-original-imagf9gyd4u6w85z.jpeg?q=70&crop=false'),
     ('Samsung Tab', 18999, 'SAMSUNG Galaxy Tab A9+ 4 GB RAM 64 GB ROM 11.0 inch with Wi-Fi Only Tablet (GRAPHITE)', 'Tab', 'https://rukminim2.flixcart.com/image/416/416/xif0q/tablet/v/4/h/-original-imagu5gbhgbjqvh6.jpeg?q=70&crop=false'),
     ('Frontech Mouse', 189, 'Frontech MS-0047 Wired Optical Mouse (USB 2.0, USB 3.0, Black)', 'Mouse', 'https://rukminim2.flixcart.com/image/416/416/xif0q/mouse/x/x/z/ms-0047-frontech-original-imahfmf63tjmaea8.jpeg?q=70&crop=false'),
-    ('Bluetooth Soundbar', 300, 'ZEBRONICS ZEB-PSPK 31 (Vita Bar 200) with TWS, 24 W Bluetooth Soundbar  (Black, Stereo Channel)', 'Soundbar', 'https://rukminim2.flixcart.com/image/416/416/xif0q/speaker/soundbar/z/6/g/zeb-pspk-31-zebronics-original-imah5mzytyznkfvj.jpeg?q=70&crop=false'),
-    ('Panasonic TV', 400, 'A smart TV with many features', 'TV', 'https://i.gadgets360cdn.com/products/televisions/large/1548154685_832_panasonic_32-inch-lcd-full-hd-tv-th-l32u20.jpg'),
-    ('Sony TV', 500, 'A TV with many features', 'TV', 'https://4.imimg.com/data4/PM/KH/MY-34794816/lcd-500x500.png'),
+    ('Bluetooth Soundbar', 1699, 'ZEBRONICS ZEB-PSPK 31 (Vita Bar 200) with TWS, 24 W Bluetooth Soundbar  (Black, Stereo Channel)', 'Soundbar', 'https://rukminim2.flixcart.com/image/416/416/xif0q/speaker/soundbar/z/6/g/zeb-pspk-31-zebronics-original-imah5mzytyznkfvj.jpeg?q=70&crop=false'),
+    ('Wifi Extender', 1299, 'TP-Link TL-WA850RE(IN) 300 Mbps WiFi Range Extender  (White, Single Band)', 'Wifi', 'https://rukminim2.flixcart.com/image/416/416/ku5ufm80/router/b/t/p/tl-wa850re-in-tp-link-original-imag7cjef7fkhfgg.jpeg?q=70&crop=false'),
+    ('Sony TV', 50000, 'A TV with many features', 'TV', 'https://4.imimg.com/data4/PM/KH/MY-34794816/lcd-500x500.png'),
     ('LG Fridge', 200, 'A fridge with many features', 'Fridge', 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTFx-2-wTOcfr5at01ojZWduXEm5cZ-sRYPJA&usqp=CAU')
 ";
 
