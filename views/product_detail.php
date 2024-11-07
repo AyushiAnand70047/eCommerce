@@ -1,19 +1,8 @@
 <?php
+
 include('header.php');
 include('../controller/ProductController.php');
 
-// Get the product ID from the URL (e.g., product_detail.php?id=6)
-// if (isset($_GET['id'])) {
-//     $productId = $_GET['id'];
-// } else {
-//     // If no id is provided, show an error or redirect
-//     echo "Product not found!";
-//     echo "hii";
-//     exit;
-// }
-
-// Fetch product details from the database or product array using the ID
-// For example, if you have a list of products in the $products array:
 $productId = $_GET['id'];
 $product = null;
 foreach ($products as $item) {
@@ -35,7 +24,7 @@ if ($product === null) {
             <img class="detail-img" src="<?php echo htmlspecialchars($product['gallery']); ?>" alt="">
         </div>
         <div class="col-sm-6">
-            <a href="/">Go Back</a>
+            <a href="../views/product.php">Go Back</a>
             <h2><?php echo htmlspecialchars($product['name']); ?></h2>
             <h3>Price: <?php echo htmlspecialchars($product['price']); ?></h3>
             <h4>Details: <?php echo htmlspecialchars($product['description']); ?></h4>
