@@ -24,7 +24,7 @@
                     <li class="active"><a href="../views/product.php">Home</a></li>
                     <li><a href="/myorders">Orders</a></li>
                 </ul>
-                <form action="/search" class="navbar-form navbar-left" method="GET">
+                <form action="../routes/search.php" class="navbar-form navbar-left" method="GET">
                     <div class="form-group">
                         <input type="text" name="query" class="form-control search-box" placeholder="Search">
                     </div>
