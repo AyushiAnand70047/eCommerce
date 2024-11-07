@@ -30,10 +30,9 @@ if ($product === null) {
             <h4>Details: <?php echo htmlspecialchars($product['description']); ?></h4>
             <h4>Category: <?php echo htmlspecialchars($product['category']); ?></h4>
             <br><br>
-            <form action="/add_to_cart" method="POST">
-                <!-- CSRF token (if required for your PHP app) -->
-                <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
-                <input type="hidden" name="product_id" value="<?php echo htmlspecialchars($product['id']); ?>">
+            <form action="../routes/add_to_cart.php" method="POST">
+                <input type="hidden" name="product_id"
+                    value="<?php echo isset($product['id']) ? htmlspecialchars($product['id']) : ''; ?>">
                 <button class="btn btn-primary" type="submit">Add to Cart</button>
             </form>
             <br><br>

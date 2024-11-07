@@ -19,7 +19,7 @@ while ($row = $result->fetch_assoc()) {
 }
 
 if ($userExists) {
-    $_SESSION['user_email'] = $email;
+    $_SESSION['email'] = $email;
     header("Location: ../views/product.php");
     exit();
 } else {
