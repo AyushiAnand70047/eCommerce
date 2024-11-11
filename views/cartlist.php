@@ -27,7 +27,7 @@ include('../controller/CartController.php');
                 </div>
             <?php endforeach; ?>
         </div>
-        <a class="btn btn-success" href="ordernow.php">Order Now</a> <br><br>
+        <a class="btn btn-success" href="../routes/order_now.php">Order Now</a> <br><br>
     </div>
 </div>
 
