@@ -30,15 +30,48 @@
                     </div>
                     <button type="submit" class="btn btn-default">Search</button>
                 </form>
+                <?php
+                if (session_status() == PHP_SESSION_NONE) {
+                    session_start();
+                }
+                include('../includes/db.php'); // Include your DB connection file
+                
+                // Check if user email is stored in session
+                $userEmail = isset($_SESSION['email']) ? $_SESSION['email'] : null;
+
+                // If email exists in session, fetch the user id from the database
+                if ($userEmail) {
+                    // Fetch the user ID based on the email from the session
+                    $stmt = $conn->prepare("SELECT id FROM users_info WHERE email = ?");
+                    $stmt->bind_param("s", $userEmail);
+                    $stmt->execute();
+                    $stmt->bind_result($userId);
+                    $stmt->fetch();
+                    $stmt->close();
+
+                    // Fetch the total count of products in the cart for the logged-in user
+                    if ($userId) {
+                        $stmt = $conn->prepare("SELECT COUNT(*) AS total FROM cart WHERE user_id = ?");
+                        $stmt->bind_param("i", $userId);
+                        $stmt->execute();
+                        $stmt->bind_result($total);
+                        $stmt->fetch();
+                        $stmt->close();
+                    }
+                } else {
+                    $total = 0; // If no user is logged in, set total to 0
+                }
+                ?>
+
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="cartlist.php">cart(<?= $total ?>)</a></li>
-                    <?php if (isset($_SESSION['user'])): ?>
+                    <li><a href="cartlist.php">cart(<?php echo $total; ?>)</a></li>
+                    <?php if ($userEmail): ?>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <?= htmlspecialchars($_SESSION['user']['name']) ?> <span class="caret"></span>
+                                <?=$userEmail ?> <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="/logout">Logout</a></li>
+                                <li><a href="product.php">Logout</a></li>
                             </ul>
                         </li>
                     <?php else: ?>

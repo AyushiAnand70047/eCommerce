@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 include('../includes/db.php'); // Include your DB connection
 
 if (isset($_SESSION['email'])) {
