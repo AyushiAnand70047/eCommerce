@@ -8,7 +8,7 @@ if (session_status() == PHP_SESSION_NONE) {
 $email = $_SESSION['email'];
 
 // Database connection details
-include('../includes/db.php');
+include('../database_connection/db.php');
 
 // Get the user ID using the email
 $userQuery = "

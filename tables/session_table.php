@@ -1,6 +1,6 @@
 <?php
 
-include('../includes/db.php');
+include('../database_connection/db.php');
 
 $sql = "CREATE TABLE IF NOT EXISTS sessions (
     id VARCHAR(255) PRIMARY KEY,

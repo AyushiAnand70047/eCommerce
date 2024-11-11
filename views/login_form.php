@@ -5,14 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <style>
-        .custom-login {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
@@ -23,7 +16,7 @@
                 <h3 style="font-weight: bold; font-size: xx-large;">Login</h3>
             </div>
             <div class="panel-body" style="font-size: large;">
-                <form action="../public/login.php" method="POST" style="padding: 1rem;">
+                <form action="../routes/login.php" method="POST" style="padding: 1rem;">
 
                     <div class="form-group" style="margin-top: 2%;">
                         <label for="exampleInputEmail1">Email address</label>

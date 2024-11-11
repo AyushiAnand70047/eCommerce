@@ -1,6 +1,6 @@
 <?php
 if (session_status() == PHP_SESSION_NONE) {
-    session_start(); // Ensure session is started
+    session_start();
 }
 $total = $_SESSION['total'];
 ?>
@@ -56,51 +56,4 @@ $total = $_SESSION['total'];
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
 
-<style>
-    .custom-login {
-        height: 500px;
-    }
-
-    .custom-signup {
-        height: 500px;
-    }
-
-    img.slider-img {
-        height: 400px !important
-    }
-
-    .custom-product {
-        height: 600px
-    }
-
-    .slider-text {
-        background-color: #35443585 !important;
-    }
-
-    .trending-image {
-        height: 100px;
-    }
-
-    .trening-item {
-        float: left;
-        width: 20%;
-    }
-
-    .trending-wrapper {
-        margin: 30px;
-    }
-
-    .detail-img {
-        height: 200px;
-    }
-
-    .search-box {
-        width: 500px !important
-    }
-
-    .cart-list-devider {
-        border-bottom: 1px solid #ccc;
-        margin-bottom: 20px;
-        padding-bottom: 20px
-    }
-</style>
+<link rel="stylesheet" href="../css/style.css">

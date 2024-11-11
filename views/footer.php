@@ -3,25 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    .social-icons {
-      margin-top: 10px;
-    }
-
-    .social-icons a {
-      margin: 0 10px;
-      color: #333;
-      text-decoration: none;
-    }
-
-    .social-icons .facebook:hover {
-      color: #007bff;
-    }
-
-    .social-icons .insta:hover {
-      color: crimson;
-    }
-  </style>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>

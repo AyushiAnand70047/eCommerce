@@ -1,6 +1,6 @@
 <?php
 
-include('../includes/db.php');
+include('../database_connection/db.php');
 
 $sql = "INSERT INTO products (name, price, description, category, gallery) VALUES 
     ('Apple Watch', 41900, 'Apple Watch Series 9 GPS 41mm Midnight Aluminium Case with Midnight Sport Band - S/M', 'Watch', 'https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/s/q/r/-original-imagte6xkwbyutkk.jpeg?q=70&crop=false'),

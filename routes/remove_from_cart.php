@@ -1,6 +1,6 @@
 <?php
 session_start(); // Ensure session is started
-include('../includes/db.php'); // Include your DB connection
+include('../database_connection/db.php'); // Include your DB connection
 
 // Check if cart_id is passed in the URL
 if (isset($_GET['cart_id'])) {

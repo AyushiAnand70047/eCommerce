@@ -1,16 +1,14 @@
 <?php
-// Include necessary files for DB connection and functions
-include('../includes/db.php');
+
+include('../database_connection/db.php');
 include_once('../controller/ProductController.php');
 
-// Get the full request URI
 $request_uri = $_SERVER['REQUEST_URI'];
 
-// Extract the product ID from the request URI (last part of the URL)
 $uri_parts = explode('/', rtrim($request_uri, '/'));
-$id = end($uri_parts);  // The last part is assumed to be the product ID
+$id = end($uri_parts);
 
-if (is_numeric($id)) {  // Check if the extracted ID is numeric
+if (is_numeric($id)) {
     $product = getProductById($conn, $id);
     if ($product) {
         header("Location: /E-commercePHP/views/product_detail.php?id=$id");

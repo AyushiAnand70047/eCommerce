@@ -68,78 +68,7 @@ include('../controller/ProductController.php');
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
   integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<style>
-  img.slider-img {
-    height: 400px !important
-  }
-
-  .custom-product {
-    height: 600px
-  }
-
-  .slider-text {
-    background-color: #35443585 !important;
-  }
-
-  .trending-image {
-    height: 100px;
-  }
-
-  .trening-item {
-    float: left;
-    width: 20%;
-  }
-
-  .trending-wrapper {
-    margin: 30px;
-  }
-
-  .detail-img {
-    height: 200px;
-  }
-
-  .search-box {
-    width: 500px !important
-  }
-
-  .cart-list-devider {
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 20px;
-    padding-bottom: 20px
-  }
-
-  .custom-card {
-    border: none;
-    background: linear-gradient(135deg, #e3f2fd, #FFFFFF, #FFFFFF, #bbdefb);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 8px;
-    overflow: hidden;
-    padding: 40px;
-    margin: 30px;
-  }
-
-  .custom-card:hover {
-    transform: scale(1.09);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    background: linear-gradient(135deg, #f8f9fa, #FFFFFF, #FFFFFF, #e3f2fd);
-  }
-
-  .trending-image {
-    object-fit: cover;
-    transition: opacity 0.3s;
-  }
-
-  .trending-image:hover {
-    opacity: 0.9;
-  }
-
-  .card-title {
-    font-weight: bold;
-    color: #333;
-    text-decoration: none;
-  }
-</style>
-
+  <link rel="stylesheet" href="../css/style.css">
 
 <?php
 include('footer.php');

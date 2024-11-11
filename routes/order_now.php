@@ -7,7 +7,7 @@ if (session_status() == PHP_SESSION_NONE) {
 // Get the user ID from the session
 $email = $_SESSION['email'];
 
-include('../includes/db.php');
+include('../database_connection/db.php');
 
 $userQuery = "
     SELECT id 
@@ -24,7 +24,7 @@ if ($userResult && $userResult->num_rows > 0) {
 
 if ($userId) {
     // Database connection details
-    include('../includes/db.php');
+    include('../database_connection/db.php');
 
     // Query to join cart and products tables and sum the prices
     $query = "

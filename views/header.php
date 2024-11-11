@@ -4,11 +4,6 @@
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script> -->
 
 </head>
 
@@ -23,7 +18,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">E-Comm</a>
+                <a class="navbar-brand" href="product.php">E-Comm</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -38,10 +33,12 @@
                     <button type="submit" class="btn btn-default">Search</button>
                 </form>
                 <?php
+
                 if (session_status() == PHP_SESSION_NONE) {
                     session_start();
                 }
-                include('../includes/db.php'); // Include your DB connection file
+
+                include('../database_connection/db.php');
                 
                 // Check if user email is stored in session
                 $userEmail = isset($_SESSION['email']) ? $_SESSION['email'] : null;

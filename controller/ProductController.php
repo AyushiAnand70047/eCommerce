@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-include('../includes/db.php');
+include('../database_connection/db.php');
 
 // Function to get all products
 function getProducts($conn)
@@ -17,14 +17,14 @@ function getProducts($conn)
 function getProductById($conn, $id) {
     $sql = "SELECT * FROM products WHERE id = ?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("i", $id);  // Bind the integer ID
+    $stmt->bind_param("i", $id);
     $stmt->execute();
     $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {
-        return $result->fetch_assoc();  // Return the product as an associative array
+        return $result->fetch_assoc();
     } else {
-        return null;  // No product found
+        return null;
     }
 }
 

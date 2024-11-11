@@ -1,6 +1,6 @@
 <?php
 session_start(); // Ensure session is started
-include('../includes/db.php');
+include('../database_connection/db.php');
 
 // Check if the user is logged in
 if (isset($_SESSION['email'])) {

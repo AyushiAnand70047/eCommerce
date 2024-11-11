@@ -1,9 +1,9 @@
-<!-- /views/signup_form.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
                     <h3 style="font-weight: bold; font-size: xx-large;">Sign Up</h3>
                 </div>
                 <div class="panel-body" style="font-size: large;">
-                    <form action="../public/signup.php" method="POST" style="padding: 1rem;">
+                    <form action="../insert_data/signup.php" method="POST" style="padding: 1rem;">
                         <div class="form-group" style=" margin-top: 2%;">
                             <label for="name">Name</label>
                             <input type="text" name="name" class="form-control" id="name" placeholder="Name"

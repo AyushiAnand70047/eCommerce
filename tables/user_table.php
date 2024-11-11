@@ -1,6 +1,6 @@
 <?php
 
-include('../includes/db.php');
+include('../database_connection/db.php');
 
 $sql = "CREATE TABLE IF NOT EXISTS users_info (
     id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
