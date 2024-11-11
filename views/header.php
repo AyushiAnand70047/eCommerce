@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="../views/product.php">Home</a></li>
-                    <li><a href="/myorders">Orders</a></li>
+                    <li><a href="myorders.php">Orders</a></li>
                 </ul>
                 <form action="../routes/search.php" class="navbar-form navbar-left" method="GET">
                     <div class="form-group">

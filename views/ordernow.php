@@ -30,8 +30,7 @@ $total = $_SESSION['total'];
         </table>
 
         <div>
-            <form action="/orderplace" method="POST">
-                <!-- Assuming the CSRF token is handled elsewhere in the project -->
+            <form action="../routes/order_place.php" method="POST">
                 <div class="form-group">
                     <textarea name="address" placeholder="Enter your address" class="form-control"></textarea>
                 </div>
