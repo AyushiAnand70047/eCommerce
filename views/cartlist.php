@@ -22,7 +22,7 @@ include('../controller/CartController.php');
                         </div>
                     </div>
                     <div class="col-sm-3">
-                        <a href="removecart.php?cart_id=<?= $item['cart_id'] ?>" class="btn btn-warning">Remove from Cart</a>
+                        <a href="../routes/remove_from_cart.php?cart_id=<?= $item['cart_id'] ?>" class="btn btn-warning">Remove from Cart</a>
                     </div>
                 </div>
             <?php endforeach; ?>
