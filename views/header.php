@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
 </head>
 
 <body>
@@ -71,7 +71,7 @@
                                 <?=$userEmail ?> <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="product.php">Logout</a></li>
+                                <li><a href="../routes/logout.php">Logout</a></li>
                             </ul>
                         </li>
                     <?php else: ?>
@@ -81,7 +81,6 @@
             </div>
         </div>
     </nav>
-
 </body>
 
 </html>
